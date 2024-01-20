@@ -90,11 +90,7 @@ catch
     $result = 1
 }
  
-# Pause if -pause switch was used
-# if ($pause)
-# {
-
-if ($result == 1)
+if ($result -eq 1)
 {
     Write-Host "Press any key to exit..."
     [System.Console]::ReadKey() | Out-Null
